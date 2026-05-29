@@ -23,7 +23,12 @@
                                           &mt LSHFT SPACE  &lt 1 DEL    &lt 1 BACKSPACE
             >;
 
-            trackball-bindings = <&tmv_coarse>;
+            sensor-bindings =
+                <&scroll_vertical_encoder>,
+                // 编码器1：上下滚动,,,
+                <&scroll_horizontal_encoder>;
+
+            // 编码器2：左右滚动
         };
 
         lower {
