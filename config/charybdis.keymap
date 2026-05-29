@@ -42,12 +42,12 @@
 
         raise {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
+&trans          &trans   &trans &trans    &trans    &trans        &trans          &trans    &trans    &trans    &trans   &kp F12 
+&trans    &kp SLCK  &kp PG_UP     &kp UP    &kp LC(HOME)  &kp C_VOL_UP                                                 &kp RA(T)  &kp HOME  &kp UP    &kp PG_UP &kp SLCK        &trans
+&kp LCTRL &kp INS   &kp LC(LEFT)  &kp DOWN  &kp LC(RIGHT) &kp C_PP                                                     &kp C_MUTE &kp LEFT  &kp DOWN  &kp RIGHT &kp INS         &kp K_APP
+&trans    &trans    &kp PG_DN     &kp PSCRN &kp LC(END)   &kp C_VOL_DN   &kp RA(M)  &kp END   &kp PSCRN &kp PG_DN &kp PAUSE_BREAK &trans
+                                           &trans    &trans  &trans       &trans  &trans  
+                                                   &trans &lt 4 DEL     &lt 4 BACKSPACE   
             >;
         };
 
