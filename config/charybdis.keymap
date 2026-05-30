@@ -107,7 +107,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,
+                // 编码器1：上下滚动,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
@@ -119,18 +119,18 @@
 &kp F12         &kp F1    &kp F2  &kp F3     &kp F4    &kp F5       &kp F6     &kp F7       &kp F8    &kp F9    &kp F10   &kp F11
 &mt LCTRL PLUS  &kp EXCL  &kp AT  &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS     &kp STAR  &kp LPAR  &kp RPAR  &mt RCTRL UNDER
 &mt LALT EQUAL  &kp N1    &kp N2  &kp N3     &kp N4    &kp N5       &kp N6     &kp N7       &kp N8    &kp N9    &kp N0    &mt RALT MINUS
-                                  &lt 4 TAB  &trans    &trans       &trans     &lt 4 ENTER
+                                  &lt 4 TAB  &mkp MB4  &mkp MB5     &mkp MB3   &lt 4 ENTER
                                              &trans    &trans       &trans
             >;
         };
 
         raise {
             bindings = <
-&trans     &trans    &trans        &trans     &trans         &trans          &trans           &trans    &trans     &trans     &trans           &kp F12
-&trans     &kp SLCK  &kp PG_UP     &kp UP     &kp LC(HOME)   &kp C_VOL_UP    &kp RA(T)        &kp HOME  &kp UP     &kp PG_UP  &kp SLCK         &trans
-&kp LCTRL  &kp INS   &kp LC(LEFT)  &kp DOWN   &kp LC(RIGHT)  &kp C_PP        &kp C_MUTE       &kp LEFT  &kp DOWN   &kp RIGHT  &kp INS          &kp K_APP
-&trans     &trans    &kp PG_DN     &kp PSCRN  &kp LC(END)    &kp C_VOL_DN    &kp RA(M)        &kp END   &kp PSCRN  &kp PG_DN  &kp PAUSE_BREAK  &trans
-                                   &trans     &mkp MB4       &mkp MB5        &mkp MB3         &trans
+&trans     &trans    &trans        &trans     &trans         &trans          &trans           &trans         &trans     &trans     &trans           &trans
+&trans     &kp SLCK  &kp PG_UP     &kp UP     &kp LC(HOME)   &kp C_VOL_UP    &kp RA(T)        &kp PG_UP      &kp UP     &kp HOME   &kp SLCK         &trans
+&kp LCTRL  &kp INS   &kp LC(LEFT)  &kp DOWN   &kp LC(RIGHT)  &kp C_PP        &kp C_MUTE       &kp LEFT       &kp DOWN   &kp RIGHT  &kp INS          &kp K_APP
+&trans     &trans    &kp PG_DN     &kp PSCRN  &kp LC(END)    &kp C_VOL_DN    &kp RA(M)        &kp PAGE_DOWN  &kp PSCRN  &kp END    &kp PAUSE_BREAK  &trans
+                                   &trans     &trans         &trans          &trans           &trans
                                               &trans         &lt 4 DEL       &lt 4 BACKSPACE
             >;
         };
