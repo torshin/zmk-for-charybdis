@@ -52,14 +52,25 @@
         tap-ms = <100>;
     };
 
-    hmr: hmr {
+    hrml: homewrow_mods_left {
         compatible = "zmk,behavior-hold-tap";
-        label = "HMR";
+        label = "HMRL";
         bindings = <&mt>, <&kp>;
 
         #binding-cells = <2>;
         tapping-term-ms = <200>;
-        flavor = "balanced";
+        flavor = "hold-preferred";
+        hold-trigger-key-positions = <6 18 30 42 7 8 9 10 11 19 20 21 22 23 31 32 33 34 35 43 44 45 46 47 52 42 43 51 52 55>;
+    };
+
+    hrmr: homewrow_mods_right {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HRMR";
+        bindings = <&mt>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 48 49 50 53 54>;
     };
 
     behaviors {
@@ -70,17 +81,17 @@
 
         layer_0 {
             bindings = <
-&kp LEFT_GUI   &kp N1           &kp N2           &kp N3             &kp N4               &kp N5       &kp N6           &kp N7       &kp N8     &kp N9   &kp N0    &mt RALT BSLH
-&kp GRAVE      &kp Q            &kp W            &kp E              &kp R                &kp T        &kp Y            &kp U        &kp I      &kp O    &kp P     &kp LBKT
-&mt LCTRL ESC  &hmr LEFT_GUI A  &hmr LEFT_ALT S  &hmr LEFT_SHIFT D  &hmr LEFT_CONTROL F  &kp G        &kp H            &kp J        &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LALT       &kp Z            &kp X            &kp C              &kp V                &kp B        &kp N            &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
-                                                 &lt 1 TAB          &mkp MB1             &mkp MB2     &lt 3 LG(SPACE)  &lt 1 ENTER
-                                                                    &mt LSHFT SPACE      &lt 2 DEL    &lt 2 BACKSPACE
+&kp LEFT_GUI   &kp N1            &kp N2            &kp N3              &kp N4                &kp N5       &kp N6           &kp N7                &kp N8              &kp N9            &kp N0                     &mt RALT BSLH
+&kp GRAVE      &kp Q             &kp W             &kp E               &kp R                 &kp T        &kp Y            &kp U                 &kp I               &kp O             &kp P                      &kp LBKT
+&mt LCTRL ESC  &hrml LEFT_GUI A  &hrml LEFT_ALT S  &hrml LEFT_SHIFT D  &hrml LEFT_CONTROL F  &kp G        &kp H            &hrmr LEFT_CONTROL J  &hrmr LEFT_SHIFT K  &hrmr LEFT_ALT L  &hrmr RIGHT_GUI SEMICOLON  &kp SQT
+&kp LALT       &kp Z             &kp X             &kp C               &kp V                 &kp B        &kp N            &kp M                 &kp COMMA           &kp DOT           &kp FSLH                   &kp RBKT
+                                                   &lt 1 TAB           &mkp MB1              &mkp MB2     &lt 3 LG(SPACE)  &lt 1 ENTER
+                                                                       &mt LSHFT SPACE       &lt 2 DEL    &lt 2 BACKSPACE
             >;
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
