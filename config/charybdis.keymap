@@ -55,7 +55,7 @@
     hrml: homewrow_mods_left {
         compatible = "zmk,behavior-hold-tap";
         label = "HMRL";
-        bindings = <&mt>, <&kp>;
+        bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;
         tapping-term-ms = <200>;
@@ -66,7 +66,7 @@
     hrmr: homewrow_mods_right {
         compatible = "zmk,behavior-hold-tap";
         label = "HRMR";
-        bindings = <&mt>, <&kp>;
+        bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;
         tapping-term-ms = <200>;
@@ -91,7 +91,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
