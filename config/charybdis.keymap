@@ -122,8 +122,6 @@
                                   &lt 4 TAB  &trans    &trans       &trans     &lt 4 ENTER
                                              &trans    &trans       &trans
             >;
-
-            trackball-bindings = <&tsl>;
         };
 
         raise {
@@ -168,8 +166,8 @@
                                    &none         &none         &none         &none         &none
                                                  &none         &none         &none
             >;
-       
-            
+
+
         };
 
        Mouse {
@@ -182,7 +180,7 @@
                                                        &none      &trans        &trans
             >;
 
-            
+
         };
 
         layer_4 {
@@ -194,22 +192,23 @@
                            &trans     &mkp LCLK  &mkp RCLK    &mkp RCLK  &mkp LCLK
                                       &trans     &trans       &trans
             >;
-                
-                
-               
+
+
+
         };
 
         layer_5 {
             bindings = <
 &trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans     &trans   F  &trans     &trans       &trans     &trans     &trans     &trans     &trans
+&trans
 &trans  &trans  &trans     &mkp MCLK  &trans     &trans       &trans     &trans     &mkp MCLK  &trans     &trans  &trans
 &trans  &trans  &mkp RCLK  &trans     &mkp LCLK  &trans       &trans     &mkp LCLK  &trans     &mkp RCLK  &trans  &trans
                            &trans     &mkp LCLK  &mkp RCLK    &mkp RCLK  &mkp LCLK
                                       &trans     &trans       &trans
             >;
-                
-                
+
+
         };*/
     };
 };
