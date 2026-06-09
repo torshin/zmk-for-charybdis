@@ -1,4 +1,4 @@
-#include <dt-bindings/zmk/mouse.h>
+    #include <dt-bindings/zmk/mouse.h>
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
@@ -104,8 +104,8 @@
 &kp GRAVE      &kp Q             &kp W             &kp E               &kp R                 &kp T        &kp Y            &kp U                 &kp I               &kp O             &kp P                      &kp LBKT
 &mt LCTRL ESC  &hrml LEFT_GUI A  &hrml LEFT_ALT S  &hrml LEFT_SHIFT D  &hrml LEFT_CONTROL F  &kp G        &kp H            &hrmr LEFT_CONTROL J  &hrmr LEFT_SHIFT K  &hrmr LEFT_ALT L  &hrmr RIGHT_GUI SEMICOLON  &kp SQT
 &kp LALT       &kp Z             &kp X             &kp C               &kp V                 &kp B        &kp N            &kp M                 &kp COMMA           &kp DOT           &kp FSLH                   &kp RBKT
-                                                   &ltm 1 TAB          &mt LSHFT SPACE       &lt 2 DEL    &lt 3 LG(SPACE)  &lt 1 ENTER
-                                                                       &mkp MB1              &mkp MB2     &lt 2 BACKSPACE
+                                                   &ltm 1 TAB          &mt LSHFT SPACE       &lt 2 DEL    &lt 2 BACKSPACE  &lt 1 ENTER
+                                                                       &mkp MB1              &mkp MB2     &lt 3 LG(SPACE)
             >;
 
             sensor-bindings =
